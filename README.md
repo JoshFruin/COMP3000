@@ -1,2 +1,2 @@
-# COMP3000
+# COMP3000 - Achilles
 Final Year Computing Project
