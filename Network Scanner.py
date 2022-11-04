@@ -20,5 +20,20 @@ if ScanType == '1':
     print("IP Status: ", Scanner[ip_add].state())
     print(Scanner[ip_add].all_protocols())
     print("Open Ports: ", Scanner[ip_add]['tcp'].keys())
-    
+elif ScanType =='2':
+    print("Nmap Version: ", Scanner.nmap_version())
+    Scanner.scan(ip_add, '1-1024', '-v -sU')
+    print(Scanner.scaninfo())
+    print("IP Status: ", Scanner[ip_add].state())
+    print(Scanner[ip_add].all_protocols())
+    print("Open Ports: ", Scanner[ip_add]['udp'].keys())
+elif ScanType =='3':
+    print("Nmap Version: ", Scanner.nmap_version())
+    Scanner.scan(ip_add, '1-1024', '-v -sS -sV -sC -A -O')
+    print(Scanner.scaninfo())
+    print("IP Status: ", Scanner[ip_add].state())
+    print(Scanner[ip_add].all_protocols())
+    print("Open Ports: ", Scanner[ip_add]['tcp'].keys())
+else:
+    print("Please enter a valid option")
     
