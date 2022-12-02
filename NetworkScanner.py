@@ -1,5 +1,8 @@
-
+import sys
 import nmap
+from flask import Flask, render_template
+
+@app.route('/home/<name>')  
 
 Scanner = nmap.PortScanner()
 
