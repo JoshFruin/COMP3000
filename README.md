@@ -1,2 +1,2 @@
-# COMP3000 - Achilles
+# COMP3000 - Achilles Vulnerability Scanner
 Final Year Computing Project
