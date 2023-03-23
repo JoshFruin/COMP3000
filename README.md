@@ -3,9 +3,7 @@ Final Year Computing Project
 
 Requirements
 
-MySql
-
-Nmap
+MySql, Nmap
 
 Note
 
